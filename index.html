@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="index-style.css">
+</head>
+<body>
+      <div class="title">Information of Everything</div>
+      <button class="nav-bar-button" id="navBarButton" onclick="displayNavBar()">=</button>
+      <button class="nav-bar-hide-button" id="navBarHideButton" onclick="hideNavBar()">X</button>
+      <!-- nav bar for desktop mode-->
+      <div class="nav-bar-desktop">
+          <ul id="nav">
+              <li>home</li>
+              <li>about us</li>
+              <li>contacts</li>
+              <li>products</li>
+              
+          </ul>
+      </div>
+      <!--nav bar for desktop mode ends here-->
+      
+      <div class="contants">Information of everything is the most popular website among the students of computer science and engineering</div>
+     
+</body>
+<script type="text/javascript">
+
+    function displayNavBar()
+    {
+       document.getElementById('nav').style.display="block";
+       document.getElementById('navBarButton').style.display="none";
+       document.getElementById('navBarHideButton').style.display="block";
+    }
+    function hideNavBar()
+    {
+        document.getElementById('nav').style.display="none";
+        document.getElementById('navBarButton').style.display="block";
+        document.getElementById('navBarHideButton').style="none";
+    }
+    
+</script>
+</html>
